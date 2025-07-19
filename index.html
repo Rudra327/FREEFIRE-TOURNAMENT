@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Free Fire Tournament</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@600&display=swap');
+
+    body {
+      background-color: #1a1a2e;
+      font-family: 'Orbitron', sans-serif;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      color: orange;
+      font-size: 60px;
+      font-family: 'Bebas Neue', sans-serif;
+      margin-bottom: 10px;
+    }
+
+    .hosted-box {
+      background-color: rgba(0, 0, 0, 0.75);
+      border-left: 8px solid orange;
+      padding: 12px;
+      margin: 20px auto 30px auto;
+      width: 60%;
+      font-size: 22px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .intro {
+      background: linear-gradient(135deg, #ff9966, #ff5e62);
+      padding: 25px;
+      border-radius: 12px;
+      margin: 20px auto;
+      width: 85%;
+      font-size: 20px;
+      line-height: 1.6;
+      box-shadow: 0 0 20px rgba(255, 94, 98, 0.5);
+    }
+
+    a.register-btn {
+      color: yellow;
+      font-size: 24px;
+      text-decoration: none;
+      border: 2px solid yellow;
+      padding: 10px;
+      background-color: black;
+      margin-top: 20px;
+      display: inline-block;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    a.register-btn:hover {
+      background-color: yellow;
+      color: black;
+    }
+
+    .rules {
+      background: linear-gradient(135deg, #283E51, #485563);
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      text-align: left;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    .rules h2 {
+      color: lightblue;
+      text-align: center;
+      font-size: 28px;
+    }
+
+    .rules ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .rules li {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .form-container {
+      display: none;
+      background: linear-gradient(135deg, #283E51, #485563);
+      padding: 30px;
+      border-radius: 12px;
+      width: 85%;
+      margin: 30px auto 0;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    .form-container h2 {
+      font-size: 32px;
+      color: #FFD700;
+      margin-bottom: 20px;
+    }
+
+    .form-container input {
+      margin: 10px 0;
+      padding: 12px;
+      width: 95%;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      background-color: #f0f0f0;
+      color: black;
+    }
+
+    .form-container button {
+      background-color: #00FF00;
+      color: black;
+      padding: 12px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+      font-size: 18px;
+      border-radius: 6px;
+      transition: 0.3s;
+      margin-top: 10px;
+    }
+
+    .form-container button:hover {
+      background-color: black;
+      color: #00FF00;
+      border: 2px solid #00FF00;
+    }
+
+    #thank-you {
+      display: none;
+      text-align: center;
+      padding: 30px;
+      font-size: 22px;
+      color: #FFD700;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="main-content">
+    <h1>🔥 Free Fire Tournament 2025 🔥</h1>
+
+    <div class="hosted-box">
+      Hosted by DAV Public School, Kailash Hills
+    </div>
+
+    <div class="intro">
+      Get ready to drop in and dominate! This is your opportunity to showcase precision, teamwork, and true grit.<br><br>
+      ⭐ It’s not just a game—it’s your moment to lead your squad to glory. Let your skills speak louder than words.<br><br>
+      So gear up, squad up, and step into the arena. The battleground awaits!
+    </div>
+
+    <div class="rules">
+      <h2>📋 Rules & Regulations</h2>
+      <ul>
+        <li>Each squad must consist of 4 registered players.</li>
+        <li>All players must use their own Free Fire accounts.</li>
+        <li>No use of third-party tools, hacks, or exploits is allowed.</li>
+        <li>Any form of cheating will result in disqualification.</li>
+        <li>All matches will be played on the Bermuda map.</li>
+        <li>Final decisions rest with the tournament officials.</li>
+        <li>Respect other participants and maintain fair play.</li>
+      </ul>
+    </div>
+
+    <a class="register-btn" onclick="showForm()">Register Now</a>
+  </div>
+
+  <div id="registration" class="form-container">
+    <h2>Register Your Squad</h2>
+    <form id="squadForm" action="https://formsubmit.co/khushbo2023@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="#">
+
+      <input type="text" name="Squad Name" placeholder="Squad Name" required>
+      <input type="text" name="Team Leader Name" placeholder="Team Leader Name" required>
+      <input type="email" name="Email" placeholder="Email" required>
+      <input type="number" name="Contact Number" placeholder="Contact Number" required>
+
+      <input type="text" name="Player 1 IGN" placeholder="Player 1 IGN" required>
+      <input type="number" name="Player 1 UID" placeholder="Player 1 UID" required>
+      <input type="text" name="Player 2 IGN" placeholder="Player 2 IGN" required>
+      <input type="number" name="Player 2 UID" placeholder="Player 2 UID" required>
+      <input type="text" name="Player 3 IGN" placeholder="Player 3 IGN" required>
+      <input type="number" name="Player 3 UID" placeholder="Player 3 UID" required>
+      <input type="text" name="Player 4 IGN" placeholder="Player 4 IGN" required>
+      <input type="number" name="Player 4 UID" placeholder="Player 4 UID" required>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="thank-you">
+      <h2>🎉 Thanks for Registering!</h2>
+      <p>Your squad details have been submitted successfully.<br>
+      We’ll be in touch with updates soon. Good luck and play fair!</p>
+    </div>
+  </div>
+
+  <script>
+    function showForm() {
+      document.getElementById('main-content').style.display = 'none';
+      document.getElementById('registration').style.display = 'block';
+    }
+
+    document.getElementById("squadForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      fetch(this.action, {
+        method: "POST",
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(this))
+      }).then(response => {
+        document.getElementById("squadForm").style.display = "none";
+        document.getElementById("thank-you").style.display = "block";
+      }).catch(error => {
+        alert("Submission failed. Please try again later.");
+        console.error(error);
+      });
+    });
+  </script>
+</body>
+</html>
